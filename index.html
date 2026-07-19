@@ -3,48 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
-    <title>The Philiosohy Generator</title>
+    <title>Philosophy Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to The Philiosohy Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <div class="logo">📖</div>
+        <h1>The Quiet Mind</h1>
+        <p class="tagline">
+          Daily philosophical reflections to inspire the mind.
+        </p>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter keywords"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        The world will ask you who you are, <br />
-        and if you do not know, <br />
-        the world will tell you.- Carl Jung
-      </div>
-    </main>
+      <main>
+        <form class="the-whole-quote">
+          <p class="philosopher-search">Search by philosopher</p>
+          <input
+            type="text"
+            placeholder="e.g. Marcus Aurelius, Carl Jung, Nietzsche..."
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" value="Today's Wisdom" class="submit-button" />
+        </form>
+        <div class="quote-card">
+          <div class="quote-mark">❝</div>
+        </div>
+        <div class="quote" id="quote">
+          The world will ask you who you are, <br />
+          and if you do not know, <br />
+          the world will tell you.
+          <div class="author" id="author">- Carl Jung</div>
+          <div class="author-role">Swiss psychiatrist and psychoanalyst</div>
+        </div>
+      </main>
+      <section class="social-media-share">
+        <h3>Share this reflection</h3>
+        <div class="social-links">
+          <a href="#">Whatsapp</a>
+          <a href="#">Twitter</a>
+          <a href="#">Facebook</a>
+          <a href="#">LinkedIn</a>
+        </div>
+        <div class="wisdom">
+          <p class="wisdom-tagline">
+            Wisdom shared is wisdom multiplied. <br />
+            Inspire someone today.
+          </p>
+        </div>
+      </section>
 
-    <footer>
-      This AI project was coded by
-      <a
-        href="https://github.com/ifelsewhat/daily-reflective-philosophy-quote"
-        target="_blank"
-        >Elizabeth T. Taiwo</a
-      >
-      and is
-      <a href="https://github.com/ifelsewhat" target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and
-      <a href="https://philosophy-quote-generator.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a
+          href="https://github.com/ifelsewhat/daily-reflective-philosophy-quote"
+          target="_blank"
+          >Elizabeth T. Taiwo</a
+        >
+        and is
+        <a href="https://github.com/ifelsewhat" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a
+          href="https://philosophy-quote-generator.netlify.app/"
+          target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>

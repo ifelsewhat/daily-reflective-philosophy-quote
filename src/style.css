@@ -1,1 +1,150 @@
+body {
+  margin: 0;
+  background-color: #f8f5f0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #24344d;
+}
 
+a {
+  color: #4a6fa5;
+}
+
+.container {
+  margin: 30px auto;
+  max-width: 850px;
+  padding: 20px;
+}
+header {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 42px;
+  text-align: left;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin: 10px 0;
+  color: #24344d;
+}
+.subtitle {
+  font-size: 18px;
+  color: #7b8794;
+  line-height: 1.6;
+}
+
+.philosopher-search {
+  text-align: left;
+}
+form {
+  padding: 45px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+.instructions {
+  padding: 16px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  width: 70%;
+  font-size: 16px;
+  border-radius: 10px;
+  line-height: 20px;
+}
+
+.submit-button {
+  margin-left: 10px;
+  background: #4a6fa5;
+  color: white;
+  padding: 16px;
+  width: 20%;
+  border-radius: 12px;
+  font-size: 16px;
+  border: none;
+}
+
+.submit-button:hover {
+  background: #365889;
+}
+
+.quote-mark {
+  font-size: 30px;
+  text-align: center;
+  color: #4a6fa5;
+}
+
+.quote {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  line-height: 1.6;
+  margin: 25px 0;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-left: 5px solid #4a6fa5;
+  border-radius: 10px;
+}
+
+.author {
+  font-size: 22px;
+  color: #4a6fa5;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.author-role {
+  margin-top: 8px;
+  color: #7b8794;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.social-media-share {
+  border-radius: 10px;
+  margin: 45px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  border-left: 5px solid #4a6fa5;
+}
+
+.social-media-share h3 {
+  font-size: 24px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #4a6fa5;
+  background: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #4a6fa5;
+  color: white;
+}
+
+.wisdom-tagline {
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30x;
+}
