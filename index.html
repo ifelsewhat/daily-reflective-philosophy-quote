@@ -7,6 +7,8 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Philosophy Generator</title>
@@ -26,11 +28,12 @@
           <p class="philosopher-search">Search by philosopher</p>
           <input
             type="text"
-            placeholder="e.g. Marcus Aurelius, Carl Jung, Nietzsche..."
+            placeholder="e.g. Carl Jung, Nietzsche..."
             autofocus
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" value="Today's Wisdom" class="submit-button" />
         </form>
@@ -38,8 +41,8 @@
           <div class="quote-mark">❝</div>
         </div>
         <div class="quote" id="quote">
-          <div class="author" id="author">- Carl Jung</div>
-          <div class="author-role">Swiss psychiatrist and psychoanalyst</div>
+          <div class="author" id="author"></div>
+          <div class="author-role"></div>
         </div>
       </main>
       <section class="social-media-share">
