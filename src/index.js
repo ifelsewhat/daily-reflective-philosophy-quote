@@ -22,15 +22,16 @@ function generateQuote(event) {
     "Keep the refelction under 35 words and your response should end with the author name written in font weight of bold and in italics";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let quoteElement = document.querySelector("#quote");
+  quoteElement.classList.remove("hidden");
+  quoteElement.innerHTML = `<div class="generating"> ⏳ Generating a quote about ${instructionsInput.value}</div>`;
+
   console.log("generating quote");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
-  axios.get(apiUrl).then(displayQuote);
 
-  quoteElement.innerHTML = "The world will ask you who you are";
-  let quoteElement = document.querySelector("#quote");
+  axios.get(apiUrl).then(displayQuote);
 }
 
 let philosophyElement = document.querySelector("#philosophy-quote-generator");
-
 philosophyElement.addEventListener("submit", generateQuote);
